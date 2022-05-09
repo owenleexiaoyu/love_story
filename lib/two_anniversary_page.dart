@@ -14,6 +14,7 @@ class TwoAnniversaryPage extends StatelessWidget {
         decoration: BoxDecoration(
           image: DecorationImage(
             image: AssetImage("assets/images/cute_fish.jpeg",),
+            colorFilter: ColorFilter.mode(Colors.black54, BlendMode.srcATop),
             fit: BoxFit.cover,
           )
         ),
@@ -32,10 +33,10 @@ class TwoAnniversaryPage extends StatelessWidget {
               ),
               SizedBox(height: 50,),
               Text(
-                "小萌和小鱼两周年快乐！！！",
+                "小萌 & 小鱼\n两周年快乐！\n🌹 ❤️ 🎉",
                 style: TextStyle(
                   color: Colors.white,
-                  fontSize: 100,
+                  fontSize: 80,
                   fontFamily: "Yozai",
                   fontWeight: FontWeight.bold
                 ),

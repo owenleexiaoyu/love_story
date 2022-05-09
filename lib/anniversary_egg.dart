@@ -13,10 +13,14 @@ class AnniversaryEgg extends StatelessWidget {
           right: 40,
           top: 40,
           child: InkWell(
-            child: Image.asset(
-              "assets/images/anniversary_box.png",
-              width: 80,
-              height: 80,
+            child: AnimatedContainer(
+              duration: Duration(seconds: 2),
+              curve: Curves.easeInCubic,
+              child: Image.asset(
+                "assets/images/anniversary_box.png",
+                width: 80,
+                height: 80,
+              ),
             ),
             onTap: () {
               Navigator.pushNamed(context, "/two-anniversary");

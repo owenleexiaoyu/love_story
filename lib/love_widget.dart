@@ -6,66 +6,72 @@ class LoveWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 200,
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          LoveItem(
-            color: Colors.red,
-            height: 60.0,
-            translateY: -30,
-          ),
-          LoveItem(
-            color: Colors.blueAccent,
-            height: 125.0,
-            translateY: -60,
-            delay: Duration(milliseconds: 200),
-          ),
-          LoveItem(
-            color: Colors.amber,
-            height: 160.0,
-            translateY: -75.0,
-            delay: Duration(milliseconds: 200),
-          ),
-          LoveItem(
-            color: Colors.deepPurpleAccent,
-            height: 180.0,
-            translateY: -60.0,
-            delay: Duration(milliseconds: 400),
-          ),
-          LoveItem(
-            color: Colors.orange,
-            height: 200.0,
-            translateY: -45.0,
-            delay: Duration(milliseconds: 600),
-          ),
-          LoveItem(
-            color: Colors.deepPurpleAccent,
-            height: 180.0,
-            translateY: -60,
-            delay: Duration(milliseconds: 800),
-          ),
-          LoveItem(
-            color: Colors.amber,
-            height: 160.0,
-            translateY: -75.0,
-            delay: Duration(milliseconds: 1000),
-          ),
-          LoveItem(
-            color: Colors.blueAccent,
-            height: 125.0,
-            translateY: -60,
-            delay: Duration(milliseconds: 1200),
-          ),
-          LoveItem(
-            color: Colors.red,
-            height: 60.0,
-            translateY: -30,
-            delay: Duration(milliseconds: 1400),
-          ),
-        ],
-      ),
+      width: double.infinity,
+      height: 300,
+      margin: EdgeInsets.only(top: 100),
+      child: Center(
+          child: Container(
+        height: 200,
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            LoveItem(
+              color: Colors.red,
+              height: 60.0,
+              translateY: -30,
+            ),
+            LoveItem(
+              color: Colors.blueAccent,
+              height: 125.0,
+              translateY: -60,
+              delay: Duration(milliseconds: 200),
+            ),
+            LoveItem(
+              color: Colors.amber,
+              height: 160.0,
+              translateY: -75.0,
+              delay: Duration(milliseconds: 400),
+            ),
+            LoveItem(
+              color: Colors.deepPurpleAccent,
+              height: 180.0,
+              translateY: -60.0,
+              delay: Duration(milliseconds: 600),
+            ),
+            LoveItem(
+              color: Colors.orange,
+              height: 200.0,
+              translateY: -45.0,
+              delay: Duration(milliseconds: 800),
+            ),
+            LoveItem(
+              color: Colors.deepPurpleAccent,
+              height: 180.0,
+              translateY: -60,
+              delay: Duration(milliseconds: 1000),
+            ),
+            LoveItem(
+              color: Colors.amber,
+              height: 160.0,
+              translateY: -75.0,
+              delay: Duration(milliseconds: 1200),
+            ),
+            LoveItem(
+              color: Colors.blueAccent,
+              height: 125.0,
+              translateY: -60,
+              delay: Duration(milliseconds: 1400),
+            ),
+            LoveItem(
+              color: Colors.red,
+              height: 60.0,
+              translateY: -30,
+              delay: Duration(milliseconds: 1600),
+            ),
+          ],
+        ),
+      )),
     );
   }
 }
@@ -116,9 +122,7 @@ class _LoveItemState extends State<LoveItem>
           });
 
     if (widget.delay != null) {
-      Future.delayed(widget.delay!).then((value) => {
-        controller.repeat()
-      });
+      Future.delayed(widget.delay!).then((value) => {controller.repeat()});
     } else {
       controller.repeat();
     }

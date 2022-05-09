@@ -4,6 +4,8 @@ import 'package:love_story/love_days.dart';
 import 'package:love_story/love_widget.dart';
 import 'package:love_story/two_anniversary_page.dart';
 
+import 'love_timeline.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -39,13 +41,9 @@ class HomePage extends StatelessWidget {
           children: [
             ListView(
               children: [
-                Container(
-                  width: double.infinity,
-                  height: 300,
-                  margin: EdgeInsets.only(top: 100),
-                  child: Center(child: LoveWidget()),
-                ),
+                LoveWidget(),
                 LoveDays(),
+                LoveTimeline()
               ],
             ),
             AnniversaryEgg()
