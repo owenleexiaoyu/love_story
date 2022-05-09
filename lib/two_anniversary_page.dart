@@ -19,29 +19,37 @@ class TwoAnniversaryPage extends StatelessWidget {
           )
         ),
         child: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
+          child: ListView(
             children: [
+              SizedBox(height: 100,),
               Text(
                   "2022 年 5 月 10 日",
                 style: TextStyle(
                     color: Colors.white,
                     fontSize: 30,
-                    fontFamily: "Yozai",
                     fontWeight: FontWeight.bold
                 ),
+                textAlign: TextAlign.center,
               ),
               SizedBox(height: 50,),
               Text(
-                "小萌 & 小鱼\n两周年快乐！\n🌹 ❤️ 🎉",
+                "小萌 & 小鱼\n两周年快乐！！！\n🌹 ❤️ 🎉",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 80,
-                  fontFamily: "Yozai",
                   fontWeight: FontWeight.bold
                 ),
                 textAlign: TextAlign.center,
               ),
+              SizedBox(height: 50,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Image.asset("assets/images/heart1.jpeg", height: 160, width: 160,),
+                  Image.asset("assets/images/heart2.jpeg", height: 160, width: 160,),
+                  Image.asset("assets/images/heart3.jpeg", height: 160, width: 160,),
+                ],
+              )
             ],
           ),
         ),
