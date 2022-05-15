@@ -3,31 +3,33 @@ const MANIFEST = 'flutter-app-manifest';
 const TEMP = 'flutter-temp-cache';
 const CACHE_NAME = 'flutter-app-cache';
 const RESOURCES = {
-  "index.html": "e5f03d792d9df4c24c3dd1c3aff2d1bb",
-"/": "e5f03d792d9df4c24c3dd1c3aff2d1bb",
-"manifest.json": "cbdf06e6dd5ac735e3d12033fa00662a",
-"flutter.js": "0816e65a103ba8ba51b174eeeeb2cb67",
-"favicon.png": "5dcef449791fa27946b3d35ad8803796",
-"version.json": "28352b118e8b2ff6d3f6167763081f8a",
-"icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
+  "favicon.png": "5dcef449791fa27946b3d35ad8803796",
+"main.dart.js": "cfbee9b26cd06ba43c349bc8ea37cbcc",
 "icons/Icon-192.png": "ac9a721a12bbc803b44f645561ecb1e1",
-"assets/FontManifest.json": "9c6d9867c983d7f0e941f5d1ad9e0341",
-"assets/NOTICES": "af4b0e05855aebd23295efc717dd168e",
-"assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
-"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
-"assets/shaders/ink_sparkle.frag": "05d4c25dd51a55cdbedbf597429427f2",
-"assets/assets/fonts/BungeeOutline.ttf": "5b8199e9a45423fcd8ead61e85f9679b",
-"assets/assets/images/anniversary_box.png": "48896d813317ad337a4a99a27f8dd805",
-"assets/assets/images/heart1.jpeg": "9441f86ed2ea8009621856275434d200",
-"assets/assets/images/heart2.jpeg": "4c74f4ccb6c23ec8f766178b5ce2dd8c",
-"assets/assets/images/heart3.jpeg": "fafc69f9fe1df6f814daeb61e21654bf",
-"assets/assets/images/cute_fish.jpeg": "1667562a1d11a176f2242b6d8bd3b860",
-"assets/AssetManifest.json": "920e4c34c7f14f90598afcc49c3460e3",
+"icons/Icon-512.png": "96e752610906ba2a93c65f8abe1645f1",
+"canvaskit/canvaskit.js": "c2b4e5f3d7a3d82aed024e7249a78487",
 "canvaskit/profiling/canvaskit.js": "ae2949af4efc61d28a4a80fffa1db900",
 "canvaskit/profiling/canvaskit.wasm": "95e736ab31147d1b2c7b25f11d4c32cd",
-"canvaskit/canvaskit.js": "c2b4e5f3d7a3d82aed024e7249a78487",
 "canvaskit/canvaskit.wasm": "4b83d89d9fecbea8ca46f2f760c5a9ba",
-"main.dart.js": "6b58e91cd943a19dc3422d445535e58e"
+"version.json": "28352b118e8b2ff6d3f6167763081f8a",
+"assets/packages/cupertino_icons/assets/CupertinoIcons.ttf": "6d342eb68f170c97609e9da345464e5e",
+"assets/fonts/MaterialIcons-Regular.otf": "95db9098c58fd6db106f1116bae85a0b",
+"assets/AssetManifest.json": "8f37266b0abf8ffcb783609b8cc46599",
+"assets/shaders/ink_sparkle.frag": "b01136ab9e5460d37ee80a45c8ca38fb",
+"assets/NOTICES": "956b7043d3c67f5202f904a54bf381ba",
+"assets/FontManifest.json": "72955810ae218efbf6dda847f075d3d6",
+"assets/assets/fonts/Yozai.ttf": "554890acf1c59c1c7eea0622b2bc304c",
+"assets/assets/fonts/BungeeOutline.ttf": "5b8199e9a45423fcd8ead61e85f9679b",
+"assets/assets/images/cute_fish.jpeg": "1667562a1d11a176f2242b6d8bd3b860",
+"assets/assets/images/anniversary_box.png": "48896d813317ad337a4a99a27f8dd805",
+"assets/assets/images/heart2.jpeg": "4c74f4ccb6c23ec8f766178b5ce2dd8c",
+"assets/assets/images/letter_bg.jpg": "ca163128378574fc4b26e892209f9103",
+"assets/assets/images/heart1.jpeg": "9441f86ed2ea8009621856275434d200",
+"assets/assets/images/heart3.jpeg": "fafc69f9fe1df6f814daeb61e21654bf",
+"flutter.js": "0816e65a103ba8ba51b174eeeeb2cb67",
+"index.html": "23a6124bcd7c01b1b68c9e29eac74383",
+"/": "23a6124bcd7c01b1b68c9e29eac74383",
+"manifest.json": "cbdf06e6dd5ac735e3d12033fa00662a"
 };
 
 // The application shell files that are downloaded before a service worker can
@@ -35,7 +37,6 @@ const RESOURCES = {
 const CORE = [
   "main.dart.js",
 "index.html",
-"assets/NOTICES",
 "assets/AssetManifest.json",
 "assets/FontManifest.json"];
 // During install, the TEMP cache is populated with the application shell files.
