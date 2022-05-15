@@ -59,3 +59,6 @@ flutter:
     - family: BungeeOutline
       fonts:
         - asset: assets/fonts/BungeeOutline.ttf
+    - family: Yozai
+      fonts:
+        - asset: assets/fonts/Yozai.ttf

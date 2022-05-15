@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:love_story/anniversary_egg.dart';
+import 'package:love_story/appbar_button_action.dart';
 import 'package:love_story/love_days.dart';
 import 'package:love_story/love_widget.dart';
 import 'package:love_story/two_anniversary_page.dart';
 
+import 'appbar_popup_action.dart';
 import 'love_timeline.dart';
 
 void main() {
@@ -35,18 +36,24 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        actions: [
+          AppBarPopupAction(title: "周年纪念", items: [
+            AppBarPopupActionItem(0, "两周年", () {
+              Navigator.of(context).pushNamed("/two-anniversary");
+            }),
+          ],),
+          SizedBox(width: 50,),
+        ],
+      ),
       body: Container(
         color: Colors.black,
-        child: Stack(
+        child: ListView(
           children: [
-            ListView(
-              children: [
-                LoveWidget(),
-                LoveDays(),
-                LoveTimeline()
-              ],
-            ),
-            AnniversaryEgg()
+            LoveWidget(),
+            LoveDays(),
+            LoveTimeline(),
           ],
         ),
       ),

@@ -70,6 +70,7 @@ class TimelineItem extends StatelessWidget {
               ]),
           child: Text(
             data.title,
+            textAlign: TextAlign.center,
             style: TextStyle(
               color: Colors.pinkAccent,
               fontSize: 20,
