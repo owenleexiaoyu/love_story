@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:love_story/appbar_button_action.dart';
 import 'package:love_story/love_days.dart';
 import 'package:love_story/love_widget.dart';
 import 'package:love_story/two_anniversary_page.dart';
 
 import 'appbar_popup_action.dart';
 import 'love_timeline.dart';
+import 'one_anniversary_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
       ),
       routes: {
         "/": (context) => HomePage(),
+        "/one-anniversary": (context) => OneAnniversaryPage(),
         "/two-anniversary": (context) => TwoAnniversaryPage(),
       },
       initialRoute: "/",
@@ -40,7 +41,10 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.black,
         actions: [
           AppBarPopupAction(title: "周年纪念", items: [
-            AppBarPopupActionItem(0, "两周年", () {
+            AppBarPopupActionItem(0, "一周年", () {
+              Navigator.of(context).pushNamed("/one-anniversary");
+            }),
+            AppBarPopupActionItem(1, "两周年", () {
               Navigator.of(context).pushNamed("/two-anniversary");
             }),
           ],),
