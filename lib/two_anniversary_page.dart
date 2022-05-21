@@ -85,7 +85,7 @@ class TwoAnniversaryPage extends StatelessWidget {
                     ),
                     padding: EdgeInsets.symmetric(horizontal: 300, vertical: 80),
                     child: Center(
-                      child: Text("行者历无疆，\n池鱼跃波起。\n相逢红尘中，\n厮守时光里。",
+                      child: Text("行者历无疆，\n池鱼跃波起。\n相逢微雨中，\n厮守时光里。",
                         style: TextStyle(
                           color: Colors.white,
                           fontFamily: "Yozai",
